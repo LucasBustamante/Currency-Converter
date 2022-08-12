@@ -23,4 +23,4 @@ Projeto não será totalmente fiel ao design
 
 
 ### APK
-(Não disponível)
+(Não disponível)..
