@@ -23,4 +23,8 @@ Projeto não será totalmente fiel ao design
 
 
 ### APK
+<<<<<<< HEAD
 (Não disponível)
+=======
+(Não disponível)
+>>>>>>> 0ab170ebe43801f89f7475077fd9509beb9d0076
