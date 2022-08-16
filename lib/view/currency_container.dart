@@ -13,7 +13,7 @@ class CurrencyContainer extends StatelessWidget {
 
     return Container(
       height: size * 0.06,
-      width: size * 0.12,
+      width: MediaQuery.of(context).size.width*0.30,
       decoration: BoxDecoration(
         border: Border.all(color: kContainer2Color, width: 2),
             borderRadius: BorderRadius.circular(size*0.015),

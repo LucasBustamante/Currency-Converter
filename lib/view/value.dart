@@ -8,8 +8,14 @@ class DigValue extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(15),
-      child: Container(child: Text('BRL 505.00', style: TextStyle(fontSize: 35,
-      color: kContainer2Color, fontWeight: FontWeight.w500),),),
+      child: Row(mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('BRL ', style: TextStyle(fontSize: 35,
+              color: kContainer2Color, fontWeight: FontWeight.w400),),
+          Text('505.00', style: TextStyle(fontSize: 35,
+              color: Colors.white, fontWeight: FontWeight.w500),),
+        ],
+      )
     );
   }
 }
