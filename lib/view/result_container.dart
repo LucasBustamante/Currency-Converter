@@ -10,14 +10,14 @@ class Result extends StatelessWidget {
     double size = MediaQuery.of(context).size.height + MediaQuery.of(context).size.width;
 
     return Container(
-      width: 200,
-      height: 50,
+      width: size * 0.30,
+      height: size * 0.08,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(40),
+        borderRadius: BorderRadius.circular(size*0.015),
         color: kResultColor,
       ),
 
-      child: Text('lucas'),
+
     );
   }
 }
