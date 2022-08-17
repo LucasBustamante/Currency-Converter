@@ -1,3 +1,4 @@
+import 'package:currency_converter/view/button_view.dart';
 import 'package:currency_converter/view/colors.dart';
 import 'package:currency_converter/view/currency_container.dart';
 import 'package:currency_converter/view/keyboard.dart';
@@ -14,28 +15,24 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: kBackgroundColor,
-      body: SafeArea(
-
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(height: 30),
-            Row(mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CurrencyContainer(),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: Icon(Icons.compare_arrows, size: 30),
+    return SafeArea(
+      child: Scaffold(
+          backgroundColor: kBackgroundColor,
+          body: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                  padding: const EdgeInsets.only(top: 60),
+                  child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CurrencyContainer(),
+                    ],
+                  ),
                 ),
-                CurrencyContainer()
-              ],
-            ),
-            SizedBox(height: 30),
-            KeyBoard()
-          ],
-        ),
+
+              SizedBox(height: 30),
+              ButtonView()
+            ],
+          ),
       ),
     );
   }

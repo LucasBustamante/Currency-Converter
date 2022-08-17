@@ -10,47 +10,43 @@ class KeyBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.only(top: 30),
-        child: Container(
-          decoration: BoxDecoration(
-              color: kPrimaryColor,
-            borderRadius: BorderRadius.only(topLeft: Radius.circular(50),
-                topRight: Radius.circular(50))
-          ),
-          height: 200,
-          width: MediaQuery.of(context).size.width,
-          child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              DigValue(),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Button(num: '1',),
-                  Button(num: '2',),
-                  Button(num: '3'),
-                ],
-              ),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Button(num: '4'),
-                  Button(num: '5'),
-                  Button(num: '6'),
-                ],
-              ),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Button(num: '7'),
-                  Button(num: '8'),
-                  Button(num: '9')
-                ],
-              ),
-              Button(num: '0'),
-              ConfirmButton()
-            ],
-          ),
+    return Container(
+      height: MediaQuery.of(context).size.height*0.70,
+        decoration: BoxDecoration(
+            color: kPrimaryColor,
+          borderRadius: BorderRadius.only(topLeft: Radius.circular(50),
+              topRight: Radius.circular(50))
         ),
-      ),
+        width: MediaQuery.of(context).size.width,
+        child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            DigValue(),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Button(num: '1',),
+                Button(num: '2',),
+                Button(num: '3'),
+              ],
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Button(num: '4'),
+                Button(num: '5'),
+                Button(num: '6'),
+              ],
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Button(num: '7'),
+                Button(num: '8'),
+                Button(num: '9')
+              ],
+            ),
+            Button(num: '0'),
+            ConfirmButton()
+          ],
+        ),
+
     );
   }
 }
