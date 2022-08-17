@@ -3,19 +3,26 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 import 'keyboard.dart';
 
-class ButtonView extends StatelessWidget {
+class ButtonView extends StatefulWidget {
   const ButtonView({Key? key}) : super(key: key);
 
+  @override
+  State<ButtonView> createState() => _ButtonViewState();
+}
+
+class _ButtonViewState extends State<ButtonView> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        showModalBottomSheet(
-            isScrollControlled: true,
-            barrierColor: Colors.transparent,
-            backgroundColor: Colors.transparent,
-            context: context, builder: (BuildContext context){
-          return KeyBoard();
+        setState(() {
+          showModalBottomSheet(
+              isScrollControlled: true,
+              barrierColor: Colors.transparent,
+              backgroundColor: Colors.transparent,
+              context: context, builder: (BuildContext context){
+            return KeyBoard();
+          });
         });
       },
       child: Container(

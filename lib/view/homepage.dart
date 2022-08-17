@@ -5,6 +5,8 @@ import 'package:currency_converter/view/keyboard.dart';
 import 'package:currency_converter/view/result_container.dart';
 import 'package:flutter/material.dart';
 
+import '../model/value_request.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 

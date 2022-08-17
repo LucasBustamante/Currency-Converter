@@ -1,12 +1,17 @@
+import 'package:currency_converter/model/value_request.dart';
 import 'package:currency_converter/view/colors.dart';
 import 'package:flutter/material.dart';
 
-class Button extends StatelessWidget {
+class Button extends StatefulWidget {
   final String num;
 
   const Button(this.num);
 
+  @override
+  State<Button> createState() => _ButtonState();
+}
 
+class _ButtonState extends State<Button> {
   @override
   Widget build(BuildContext context) {
 
@@ -19,6 +24,10 @@ class Button extends StatelessWidget {
           ),
           padding: EdgeInsets.all(30)
         ),
-        onPressed: (){}, child: Text(num, style: TextStyle(fontSize: 25),));
+        onPressed: (){
+         setState(() {
+           ValueResquest(widget.num);
+         });
+        }, child: Text(widget.num, style: TextStyle(fontSize: 25),));
   }
 }

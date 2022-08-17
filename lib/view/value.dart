@@ -1,9 +1,15 @@
+import 'package:currency_converter/model/value_request.dart';
 import 'package:currency_converter/view/colors.dart';
 import 'package:flutter/material.dart';
 
-class DigValue extends StatelessWidget {
+class DigValue extends StatefulWidget {
   const DigValue({Key? key}) : super(key: key);
 
+  @override
+  State<DigValue> createState() => _DigValueState();
+}
+
+class _DigValueState extends State<DigValue> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -12,7 +18,7 @@ class DigValue extends StatelessWidget {
         children: [
           Text('BRL ', style: TextStyle(fontSize: 35,
               color: kContainer2Color, fontWeight: FontWeight.w400),),
-          Text('505.00', style: TextStyle(fontSize: 35,
+          Text('$value', style: TextStyle(fontSize: 35,
               color: Colors.white, fontWeight: FontWeight.w500),),
         ],
       )

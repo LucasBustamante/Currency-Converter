@@ -3,11 +3,31 @@ import 'package:currency_converter/view/confirm_button.dart';
 import 'package:currency_converter/view/value.dart';
 import 'package:flutter/material.dart';
 
+import '../model/value_request.dart';
 import 'button.dart';
 
-class KeyBoard extends StatelessWidget {
+class KeyBoard extends StatefulWidget {
   const KeyBoard({Key? key}) : super(key: key);
 
+  @override
+  State<KeyBoard> createState() => _KeyBoardState();
+}
+
+class _KeyBoardState extends State<KeyBoard> {
+  Widget Button(String num){
+    return ElevatedButton(
+        style: ElevatedButton.styleFrom(
+            primary: kButtonColor,
+            shape: CircleBorder(
+            ),
+            padding: EdgeInsets.all(30)
+        ),
+        onPressed: (){
+          setState(() {
+            ValueResquest(num);
+          });
+        }, child: Text(num, style: TextStyle(fontSize: 25),));
+  }
   @override
   Widget build(BuildContext context) {
     return Container(
