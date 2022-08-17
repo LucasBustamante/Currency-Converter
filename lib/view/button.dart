@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class Button extends StatelessWidget {
   final String num;
 
-  const Button({super.key, required this.num});
+  const Button(this.num);
 
 
   @override

@@ -23,26 +23,26 @@ class KeyBoard extends StatelessWidget {
             DigValue(),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Button(num: '1',),
-                Button(num: '2',),
-                Button(num: '3'),
+                Button('1'),
+                Button('2',),
+                Button('3'),
               ],
             ),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Button(num: '4'),
-                Button(num: '5'),
-                Button(num: '6'),
+                Button('4'),
+                Button('5'),
+                Button('6'),
               ],
             ),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Button(num: '7'),
-                Button(num: '8'),
-                Button(num: '9')
+                Button('7'),
+                Button('8'),
+                Button('9')
               ],
             ),
-            Button(num: '0'),
+            Button('0'),
             ConfirmButton()
           ],
         ),
