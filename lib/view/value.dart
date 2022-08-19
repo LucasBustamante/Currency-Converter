@@ -18,7 +18,7 @@ class _DigValueState extends State<DigValue> {
         children: [
           Text('BRL ', style: TextStyle(fontSize: 35,
               color: kContainer2Color, fontWeight: FontWeight.w400),),
-          Text('$value', style: TextStyle(fontSize: 35,
+          Text('$display', style: TextStyle(fontSize: 35,
               color: Colors.white, fontWeight: FontWeight.w500),),
         ],
       )

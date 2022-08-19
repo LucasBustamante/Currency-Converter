@@ -62,7 +62,12 @@ class _KeyBoardState extends State<KeyBoard> {
                 Button('9')
               ],
             ),
-            Button('0'),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Button('0'),
+                Button('C')
+              ],
+            ),
             ConfirmButton()
           ],
         ),
