@@ -13,7 +13,7 @@ Projeto não será totalmente fiel ao design
 
 ### Etapas do Projeto
 
-- [ x ] Criação do design
+- [x] Criação do design
 - [ ] Criação do escopo do projeto
 - [ ] Conexão com API
 - [ ] Criação do APK
